@@ -1,6 +1,6 @@
 FROM node:14 AS backend
 WORKDIR /usr/src/app
-COPY E2E-EKS-Three-Tier-DevSecOps-Project/app/backend/ .
+COPY app/backend/package.json .
 RUN npm install
 FROM node:14.0.0-alpine
 WORKDIR /app
