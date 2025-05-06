@@ -1,6 +1,6 @@
 FROM node:14 AS backend
 WORKDIR /usr/src/app
-COPY . . 
+COPY . /usr/src/app 
 RUN npm install
 FROM node:14.0.0-alpine
 WORKDIR /app
