@@ -1,8 +1,7 @@
 FROM node:14 AS backend
 WORKDIR /usr/src/app
-COPY app/backend/ .
+COPY E2E-EKS-Three-Tier-DevSecOps-Project/app/backend/ .
 RUN npm install
-
 FROM node:14.0.0-alpine
 WORKDIR /app
 COPY --from=backend /usr/src/app/node-modules ./node-modules
