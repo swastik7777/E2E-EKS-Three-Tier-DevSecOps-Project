@@ -6,3 +6,4 @@ script {
         docker push ${repositoryUri}:${BUILD_NUMBER}
     """
 }
+////
